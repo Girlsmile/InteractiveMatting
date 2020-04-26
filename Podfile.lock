@@ -1,0 +1,50 @@
+PODS:
+  - CoreMLHelpers (0.3.0)
+  - JGProgressHUD (2.1)
+  - Reachability (3.2)
+  - SnapKit (4.2.0)
+  - STRegex (2.1.1)
+  - SwiftyJSON-flow (4.1.0)
+  - Toolkit (5.2.45):
+    - JGProgressHUD
+    - Reachability
+    - SnapKit
+    - STRegex
+    - SwiftyJSON-flow (= 4.1.0)
+
+DEPENDENCIES:
+  - CoreMLHelpers (from `https://github.com/hollance/CoreMLHelpers.git`)
+  - SnapKit (= 4.2)
+  - Toolkit
+
+SPEC REPOS:
+  http://git.flowever.net/component/Specs.git:
+    - SwiftyJSON-flow
+    - Toolkit
+  https://github.com/CocoaPods/Specs.git:
+    - JGProgressHUD
+    - Reachability
+    - SnapKit
+    - STRegex
+
+EXTERNAL SOURCES:
+  CoreMLHelpers:
+    :git: https://github.com/hollance/CoreMLHelpers.git
+
+CHECKOUT OPTIONS:
+  CoreMLHelpers:
+    :commit: e52346deaf5b07fdd4fb3939e15e1bbe9013b5e7
+    :git: https://github.com/hollance/CoreMLHelpers.git
+
+SPEC CHECKSUMS:
+  CoreMLHelpers: 27da70f8972674e1db43dfb02dce114131d49cd8
+  JGProgressHUD: aa403e9a5b45cae98903c4600cccdd98c0c3ec90
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  STRegex: d49e88d0fe58538d3175fdd989bc1243b9be2a07
+  SwiftyJSON-flow: 6d8033763d84a8d9f5b2355ac9ada4a822b4ece5
+  Toolkit: ce8fd1d0991e41a7287fb0f527ac70fc23340a58
+
+PODFILE CHECKSUM: 659a2950378693abf9328a65a119fbabef9580d7
+
+COCOAPODS: 1.9.1

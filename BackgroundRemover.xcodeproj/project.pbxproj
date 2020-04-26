@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15432434084B2CA39507481C /* Pods_BackgroundRemover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF440F04756D741607D1E3A5 /* Pods_BackgroundRemover.framework */; };
+		921FE210245525B800C8834D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921FE20F245525B800C8834D /* AppDelegate.swift */; };
+		921FE214245525B800C8834D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921FE213245525B800C8834D /* ViewController.swift */; };
+		921FE217245525B800C8834D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921FE215245525B800C8834D /* Main.storyboard */; };
+		921FE219245525BB00C8834D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 921FE218245525BB00C8834D /* Assets.xcassets */; };
+		921FE21C245525BB00C8834D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921FE21A245525BB00C8834D /* LaunchScreen.storyboard */; };
+		921FE22724552C3500C8834D /* DeepLabV3Int8LUT.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 921FE22624552C3500C8834D /* DeepLabV3Int8LUT.mlmodel */; };
+		921FE22924552C3B00C8834D /* DeepLabV3FP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 921FE22824552C3B00C8834D /* DeepLabV3FP16.mlmodel */; };
+		921FE22B24552C3F00C8834D /* DeepLabV3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 921FE22A24552C3F00C8834D /* DeepLabV3.mlmodel */; };
+		921FE23224553B3E00C8834D /* profile1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 921FE23124553B3E00C8834D /* profile1.jpg */; };
+		921FE23424553B4300C8834D /* profile3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 921FE23324553B4300C8834D /* profile3.jpg */; };
+		921FE23624553B4700C8834D /* profile2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 921FE23524553B4700C8834D /* profile2.jpg */; };
+		921FE2382455732F00C8834D /* profile4232.png in Resources */ = {isa = PBXBuildFile; fileRef = 921FE2372455732F00C8834D /* profile4232.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4FDB5B1AF8E6249D7B732767 /* Pods-BackgroundRemover.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackgroundRemover.debug.xcconfig"; path = "Target Support Files/Pods-BackgroundRemover/Pods-BackgroundRemover.debug.xcconfig"; sourceTree = "<group>"; };
+		921FE20C245525B800C8834D /* BackgroundRemover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackgroundRemover.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		921FE20F245525B800C8834D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		921FE213245525B800C8834D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		921FE216245525B800C8834D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		921FE218245525BB00C8834D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		921FE21B245525BB00C8834D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		921FE21D245525BB00C8834D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		921FE22624552C3500C8834D /* DeepLabV3Int8LUT.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DeepLabV3Int8LUT.mlmodel; sourceTree = "<group>"; };
+		921FE22824552C3B00C8834D /* DeepLabV3FP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DeepLabV3FP16.mlmodel; sourceTree = "<group>"; };
+		921FE22A24552C3F00C8834D /* DeepLabV3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DeepLabV3.mlmodel; sourceTree = "<group>"; };
+		921FE23124553B3E00C8834D /* profile1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile1.jpg; sourceTree = "<group>"; };
+		921FE23324553B4300C8834D /* profile3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile3.jpg; sourceTree = "<group>"; };
+		921FE23524553B4700C8834D /* profile2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile2.jpg; sourceTree = "<group>"; };
+		921FE2372455732F00C8834D /* profile4232.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile4232.png; sourceTree = "<group>"; };
+		E1615B03E7DA06973DDDBB18 /* Pods-BackgroundRemover.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackgroundRemover.release.xcconfig"; path = "Target Support Files/Pods-BackgroundRemover/Pods-BackgroundRemover.release.xcconfig"; sourceTree = "<group>"; };
+		EF440F04756D741607D1E3A5 /* Pods_BackgroundRemover.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BackgroundRemover.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		921FE209245525B800C8834D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15432434084B2CA39507481C /* Pods_BackgroundRemover.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		742925A5E136F01E2383B49C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FDB5B1AF8E6249D7B732767 /* Pods-BackgroundRemover.debug.xcconfig */,
+				E1615B03E7DA06973DDDBB18 /* Pods-BackgroundRemover.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		921FE203245525B800C8834D = {
+			isa = PBXGroup;
+			children = (
+				921FE20E245525B800C8834D /* BackgroundRemover */,
+				921FE20D245525B800C8834D /* Products */,
+				742925A5E136F01E2383B49C /* Pods */,
+				C98CFBB22EEA5340F0A2540A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		921FE20D245525B800C8834D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				921FE20C245525B800C8834D /* BackgroundRemover.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		921FE20E245525B800C8834D /* BackgroundRemover */ = {
+			isa = PBXGroup;
+			children = (
+				921FE23024553B3500C8834D /* Resource */,
+				921FE22D24552CDA00C8834D /* Global */,
+				921FE22524552BD900C8834D /* Controller */,
+				921FE22C24552C5D00C8834D /* Component */,
+				921FE22F2455368F00C8834D /* Extension */,
+				921FE22324552BC700C8834D /* Engine */,
+				921FE215245525B800C8834D /* Main.storyboard */,
+				921FE218245525BB00C8834D /* Assets.xcassets */,
+				921FE21A245525BB00C8834D /* LaunchScreen.storyboard */,
+				921FE21D245525BB00C8834D /* Info.plist */,
+			);
+			path = BackgroundRemover;
+			sourceTree = "<group>";
+		};
+		921FE22324552BC700C8834D /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				921FE22E24552CEF00C8834D /* MLHelper */,
+				921FE22424552BD000C8834D /* MLModel */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		921FE22424552BD000C8834D /* MLModel */ = {
+			isa = PBXGroup;
+			children = (
+				921FE22A24552C3F00C8834D /* DeepLabV3.mlmodel */,
+				921FE22624552C3500C8834D /* DeepLabV3Int8LUT.mlmodel */,
+				921FE22824552C3B00C8834D /* DeepLabV3FP16.mlmodel */,
+			);
+			path = MLModel;
+			sourceTree = "<group>";
+		};
+		921FE22524552BD900C8834D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				921FE213245525B800C8834D /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		921FE22C24552C5D00C8834D /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		921FE22D24552CDA00C8834D /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				921FE20F245525B800C8834D /* AppDelegate.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		921FE22E24552CEF00C8834D /* MLHelper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MLHelper;
+			sourceTree = "<group>";
+		};
+		921FE22F2455368F00C8834D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		921FE23024553B3500C8834D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				921FE2372455732F00C8834D /* profile4232.png */,
+				921FE23124553B3E00C8834D /* profile1.jpg */,
+				921FE23524553B4700C8834D /* profile2.jpg */,
+				921FE23324553B4300C8834D /* profile3.jpg */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		C98CFBB22EEA5340F0A2540A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF440F04756D741607D1E3A5 /* Pods_BackgroundRemover.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		921FE20B245525B800C8834D /* BackgroundRemover */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 921FE220245525BB00C8834D /* Build configuration list for PBXNativeTarget "BackgroundRemover" */;
+			buildPhases = (
+				8E991759C9AA095D86FC9DAB /* [CP] Check Pods Manifest.lock */,
+				921FE208245525B800C8834D /* Sources */,
+				921FE209245525B800C8834D /* Frameworks */,
+				921FE20A245525B800C8834D /* Resources */,
+				BA7E2767ACD31A22AC634B2F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BackgroundRemover;
+			productName = BackgroundRemover;
+			productReference = 921FE20C245525B800C8834D /* BackgroundRemover.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		921FE204245525B800C8834D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = MasterGu;
+				TargetAttributes = {
+					921FE20B245525B800C8834D = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 921FE207245525B800C8834D /* Build configuration list for PBXProject "BackgroundRemover" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 921FE203245525B800C8834D;
+			productRefGroup = 921FE20D245525B800C8834D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				921FE20B245525B800C8834D /* BackgroundRemover */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		921FE20A245525B800C8834D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				921FE21C245525BB00C8834D /* LaunchScreen.storyboard in Resources */,
+				921FE23424553B4300C8834D /* profile3.jpg in Resources */,
+				921FE219245525BB00C8834D /* Assets.xcassets in Resources */,
+				921FE23624553B4700C8834D /* profile2.jpg in Resources */,
+				921FE23224553B3E00C8834D /* profile1.jpg in Resources */,
+				921FE2382455732F00C8834D /* profile4232.png in Resources */,
+				921FE217245525B800C8834D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E991759C9AA095D86FC9DAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BackgroundRemover-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA7E2767ACD31A22AC634B2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BackgroundRemover/Pods-BackgroundRemover-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BackgroundRemover/Pods-BackgroundRemover-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BackgroundRemover/Pods-BackgroundRemover-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		921FE208245525B800C8834D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				921FE22924552C3B00C8834D /* DeepLabV3FP16.mlmodel in Sources */,
+				921FE214245525B800C8834D /* ViewController.swift in Sources */,
+				921FE210245525B800C8834D /* AppDelegate.swift in Sources */,
+				921FE22B24552C3F00C8834D /* DeepLabV3.mlmodel in Sources */,
+				921FE22724552C3500C8834D /* DeepLabV3Int8LUT.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		921FE215245525B800C8834D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				921FE216245525B800C8834D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		921FE21A245525BB00C8834D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				921FE21B245525BB00C8834D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		921FE21E245525BB00C8834D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		921FE21F245525BB00C8834D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		921FE221245525BB00C8834D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FDB5B1AF8E6249D7B732767 /* Pods-BackgroundRemover.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RTZWA2CAC9;
+				INFOPLIST_FILE = BackgroundRemover/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = girlsmile.BackgroundRemover;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		921FE222245525BB00C8834D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1615B03E7DA06973DDDBB18 /* Pods-BackgroundRemover.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RTZWA2CAC9;
+				INFOPLIST_FILE = BackgroundRemover/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = girlsmile.BackgroundRemover;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		921FE207245525B800C8834D /* Build configuration list for PBXProject "BackgroundRemover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				921FE21E245525BB00C8834D /* Debug */,
+				921FE21F245525BB00C8834D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		921FE220245525BB00C8834D /* Build configuration list for PBXNativeTarget "BackgroundRemover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				921FE221245525BB00C8834D /* Debug */,
+				921FE222245525BB00C8834D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 921FE204245525B800C8834D /* Project object */;
+}
